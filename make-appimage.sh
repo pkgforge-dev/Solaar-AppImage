@@ -11,9 +11,10 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/icons/hicolor/scalable/apps/solaar.svg
 export DESKTOP=/usr/share/applications/solaar.desktop
 export DEPLOY_PYTHON=1
+export ALWAYS_SOFTWARE=1
 
 # Deploy dependencies
-quick-sharun /usr/bin/solaar
+quick-sharun /usr/bin/solaar /usr/lib/libgtk-3.so*  
 
 # Additional changes can be done in between here
 
